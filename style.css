@@ -17,6 +17,116 @@ p{
 }
 
 /*--================================
+            Header
+   ================================--*/
+
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 56px;
+}   
+.header-section{
+    background-color: white;
+    height: 56px;
+    display: flex;
+    padding: 0px 26px;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align:top;
+}
+
+.hamburger img{
+    height: 24px;
+}
+
+/* .logo{
+    padding-right: 400px;
+} */
+
+.logo img{
+    height: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.search-bar{
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #0f0f0f;
+    border-radius: 20px;
+}
+
+
+.head-icon-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+}
+
+.head-icon-image{
+    height: 24px;
+}
+
+.create-button{
+    padding: 0px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f0f0f;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    border: 0px ;
+    border-radius: 20px;
+    text-wrap: nowrap;
+}
+
+.profile-info-box{
+    display: flex;
+    justify-content: space-between;
+  
+    column-gap: 20px;
+}
+
+.account-profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.head-button{
+    background-color: white;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.top-button{
+    height: 32px;
+    padding: 0px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f0f0f;
+    margin-right: 10px;
+    text-wrap-mode:nowrap;
+}
+
+.head-icon-button, .top-button, .create-button, .account-profile, .logo, .hamburger{
+      cursor: pointer;
+}
+/*--================================
             Video_Card
    ================================--*/
 
@@ -24,6 +134,7 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 15px;
+    padding-top: 24px;
     
 }
 
@@ -115,3 +226,4 @@ p{
     font-size: 10px;
     font-weight: normal;
 }
+
