@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100%;
     font-family: Roboto,Arial, Helvetica, sans-serif;
-    padding: 112px 40px 1000px 100px;
+    padding: 112px 0px 1000px 80px;
 
 }
 
@@ -29,7 +29,8 @@ header{
     height: 112px;
 }   
 .header-section{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
     height: 56px;
     display: flex;
     padding: 0px 26px;
@@ -179,7 +180,8 @@ header{
 }
 
 .head-button{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
     height: 56px;
     display: flex;
     justify-content: space-between;
@@ -197,7 +199,12 @@ header{
     font-weight: bold;
     color: #0f0f0f;
     margin-right: 10px;
+    transition: background-color 0.2s;
     text-wrap-mode:nowrap;
+}
+
+.top-button:hover{
+    background-color: rgb(216, 216, 216);
 }
 
 .head-icon-button, .top-button, .create-button, .account-profile, .logo, .hamburger{
@@ -210,9 +217,9 @@ header{
 #grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px 15px;
-    padding-top: 24px;
-    
+    gap: 20px 0px;  
+    margin: 0px 16px;
+    padding-top: 10px;
 }
 
 .video-card{
@@ -236,7 +243,7 @@ header{
 
 .image-thumbnail{
     width: 100%;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 
 .image-avatar{
