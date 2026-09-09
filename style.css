@@ -34,37 +34,53 @@ header{
     display: flex;
     padding: 0px 26px;
     justify-content: space-between;
-    align-items: center;
-    vertical-align:top;
 }
 
-.hamburger img{
+.left-section{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.left-section img{
     height: 24px;
 }
 
-/* .logo{
-    padding-right: 400px;
-} */
 
-.logo img{
-    height: 20px;
-}
-
-.search{
+.middle-section{
     display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
-    column-gap: 10px;
+    margin: 0px 150px;
+    column-gap: 20px;
+}
+.search-box{
+    display: flex;
+    flex: 1;
+    max-width: 600px;
 }
 .search-bar{
-    width: 500px;
+    flex: 1;
     padding: 12px;
-    border: 1px solid #0f0f0f;
-    border-radius: 20px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 20px 0px 0px 20px;
+    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.search-box button{
+    height: 42px;
+    border: 1px solid rgb(206, 206, 206);
+    border-left: none;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.search-image{
+    height: 28px;
+    padding: 2px 20px 0px 20px;
 }
 
 
-.head-icon-button{
+.voice-search-button, .notification-button{
     width: 40px;
     height: 40px;
     border: none;
@@ -75,8 +91,28 @@ header{
     height: 24px;
 }
 
+.right-section{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.create-button img{
+    height: 20px;
+    font-size: 16px;
+}
+
+.create-button p{
+    font-size: 16px;
+    padding: 0;
+    margin-left: 8px;
+}
+
 .create-button{
-    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
     font-size: 14px;
     font-weight: bold;
     color: #0f0f0f;
@@ -197,7 +233,7 @@ header{
     background-color:rgb(255, 255, 255);
     position: fixed;
     padding-left: 10px;
-    top: 70px;
+    top: 56px;
     bottom: 0;
     left: 0;
     width: 74px;
