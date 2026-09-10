@@ -22,6 +22,8 @@ p{
 
 
 header{
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
     position: fixed;
     left: 0;
     right: 0;
@@ -29,8 +31,6 @@ header{
     height: 112px;
 }   
 .header-section{
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
     height: 56px;
     display: flex;
     padding: 0px 26px;
@@ -46,7 +46,6 @@ header{
     height: 24px;
     cursor: pointer;
 }
-
 
 .middle-section{
     display: flex;
@@ -180,8 +179,6 @@ header{
 }
 
 .head-button{
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
     height: 56px;
     display: flex;
     justify-content: space-between;
@@ -220,6 +217,47 @@ header{
     gap: 20px 0px;  
     margin: 0px 16px;
     padding-top: 10px;
+}
+
+@media (max-width: 475px){
+   #grid{
+     grid-template-columns: 1fr;
+     padding: 0;
+     margin: 0px 0px;
+   }
+
+   body{
+    padding-left: 0px;
+   }
+   .head-button{
+    margin-left: 30px;
+   } 
+
+   .sidebar{
+    display: none;
+   }
+
+   .image-thumbnail{
+    border-radius: 0px;
+   }
+}
+
+@media (min-width:476px) and (max-width: 885px){
+    #grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1024px) and (max-width: 1440px){
+    #grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1921px){
+    #grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .video-card{
